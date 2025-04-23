@@ -13,7 +13,8 @@ cp .env.example .env
 And edit the `.env` file to set your environment variables.
 
 ## 🤖 Choosing a model
-You may set a different model in the `config.yaml` file. The default model is `meta-llama/llama-3-3-70b-instruct`.
+You may set a different model in the `config.yaml` file. The default model is `watsonx/meta-llama/llama-3-3-70b-instruct`.
+_Make sure to have `watsonx` prefixed in the model name to use the watsonx.ai as the LLM provider._
 
 ## 🚀 Usage
 ```bash
