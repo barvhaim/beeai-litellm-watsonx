@@ -34,9 +34,14 @@ curl --location 'http://0.0.0.0:4000/chat/completions' \
 ```
 
 ## Setup BeeAI platform environment
-Assume you have a BeeAI platform installed (and `beeai` cli)
+_(Assuming you have a BeeAI platform installed and `beeai` cli)_
+
+Make the litellm server is running, and then run the following command to setup the BeeAI platform environment:
+```bash
+beeai env setup
+```
+
 ```txt
-% beeai env setup
 ? Select LLM provider: Other               🔧 provide API URL
 ? Enter the base URL of your API (OpenAI-compatible): http://0.0.0.0:4000
 ? Enter API key: dummy
