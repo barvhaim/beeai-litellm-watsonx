@@ -1,0 +1,6 @@
+model_list:
+  - model_name: meta-llama/llama-3-3-70b-instruct
+    litellm_params:
+      # all params accepted by litellm.completion()
+      model: watsonx/meta-llama/llama-3-3-70b-instruct
+      api_key: os.environ/WATSONX_API_KEY
