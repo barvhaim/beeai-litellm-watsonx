@@ -32,3 +32,17 @@ curl --location 'http://0.0.0.0:4000/chat/completions' \
     }
 '
 ```
+
+## Setup BeeAI platform environment
+Assume you have a BeeAI platform installed (and `beeai` cli)
+```txt
+% beeai env setup
+? Select LLM provider: Other               🔧 provide API URL
+? Enter the base URL of your API (OpenAI-compatible): http://0.0.0.0:4000
+? Enter API key: dummy
+? Select a model (type to filter): meta-llama/llama-3-3-70b-instruct
+
+You're all set! (You can re-run this setup anytime with beeai env setup)
+```
+
+Awesome! Now you can use the BeeAI platform with watsonx.ai!
