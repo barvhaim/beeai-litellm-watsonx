@@ -43,7 +43,7 @@ beeai env setup
 
 ```txt
 ? Select LLM provider: Other               🔧 provide API URL
-? Enter the base URL of your API (OpenAI-compatible): http://0.0.0.0:4000
+? Enter the base URL of your API (OpenAI-compatible): http://localhost:4000
 ? Enter API key: dummy
 ? Select a model (type to filter): meta-llama/llama-3-3-70b-instruct
 
