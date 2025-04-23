@@ -1,23 +1,26 @@
-# beeai-litellm-watsonx
+# 🐝 beeai-litellm-watsonx
 
-## Installation
+## 📦 Installation
 ```bash
 pip install -r requirements.txt
 chmod +x run_server.sh
 ```
 
-## Setup environment
+## ⚙️ Setup environment
 ```bash
 cp .env.example .env
 ```
 And edit the `.env` file to set your environment variables.
 
-## Usage
+## 🤖 Choosing a model
+You may set a different model in the `config.yaml` file. The default model is `meta-llama/llama-3-3-70b-instruct`.
+
+## 🚀 Usage
 ```bash
 ./run_server.sh
 ```
 
-## Test with curl
+## 🧪 Test with curl
 ```bash
 curl --location 'http://0.0.0.0:4000/chat/completions' \
 --header 'Content-Type: application/json' \
@@ -33,10 +36,10 @@ curl --location 'http://0.0.0.0:4000/chat/completions' \
 '
 ```
 
-## Setup BeeAI platform environment
+## 🐝 Setup BeeAI platform environment
 _(Assuming you have a BeeAI platform installed and `beeai` cli)_
 
-Make the litellm server is running, and then run the following command to setup the BeeAI platform environment:
+Make sure the litellm server is running, and then run the following command to setup the BeeAI platform environment:
 ```bash
 beeai env setup
 ```
@@ -50,4 +53,4 @@ beeai env setup
 You're all set! (You can re-run this setup anytime with beeai env setup)
 ```
 
-Awesome! Now you can use the BeeAI platform with watsonx.ai!
+🎉 Awesome! Now you can use the BeeAI platform with watsonx.ai!
