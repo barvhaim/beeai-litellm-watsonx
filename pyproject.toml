@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "beeai-litellm"
+version = "0.1.0"
+description = "BeeAI LiteLLM integration"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+dependencies = [
+    "litellm[proxy]",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["beeai-litellm"]

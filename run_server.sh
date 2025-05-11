@@ -1,2 +1,2 @@
 export $(xargs < .env)
-litellm --config config.yaml
+uv run litellm --config config.yaml
